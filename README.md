@@ -47,6 +47,8 @@ The demo's Apps Script deployment must independently treat every signed-in user 
 
 This project's own code (this frontend, and — in [leaflet-pipeline](https://github.com/Daemeous/leaflet-pipeline) — the data pipeline and Apps Script backends) is licensed under the **[PolyForm Noncommercial License 1.0.0](LICENSE)**: free to use, share, and modify for any non-commercial purpose, with attribution. Most of this repo (`core.js`/`styles.css`) is loaded from [leaflet-map](https://github.com/Daemeous/leaflet-map), which carries the same license. See [`LICENSE`](LICENSE) for the full text.
 
+Copyright © Daniel Hodgkins.
+
 That covers this project's own code only. The geographic data it displays comes from sources under their own separate licenses that explicitly permit commercial use (see Attributions below) — this project's non-commercial restriction doesn't, and legally can't, extend to that underlying data.
 
 ## Attributions
