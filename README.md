@@ -19,6 +19,7 @@ Live: **https://daemeous.github.io/leaflet-map-demo/**
 | Barnsley, Penistone & Stocksbridge | https://daemeous.github.io/barnsley/ |
 | St Helens | https://daemeous.github.io/sthelens/ |
 | Shipley + Keighley and Ilkley | https://daemeous.github.io/shipley/ |
+| Bassetlaw | https://daemeous.github.io/bassetlaw/ |
 
 Related project — **[Pothole Watch](https://github.com/Daemeous/stafford-potholes)**, same visual style, separate Sheet/Apps Script backend.
 
@@ -63,4 +64,3 @@ That covers this project's own code only. The geographic data it displays comes 
 | [Turf.js](https://turfjs.org) | MIT | Geospatial analysis |
 | Google Identity Services | [Google Terms of Service](https://policies.google.com/terms) | Sign-in, loaded from Google's own servers at runtime |
 | [Overpass API](https://overpass-api.de) | [Usage policy](https://dev.overpass-api.de/overpass-doc/en/preface/commons.html) | OSM data queries (used by leaflet-pipeline) |
-
