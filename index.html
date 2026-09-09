@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://daemeous.github.io/leaflet-map/styles.css?shared_v=5">
+<link rel="stylesheet" href="https://daemeous.github.io/leaflet-map/styles.css?shared_v=6">
 </head>
 <body>
 <script>
@@ -28,7 +28,12 @@ window.MAP_CONFIG = {
   // so visitors can try the edit flow without being on a real Authorised
   // list. The Apps Script backend for THIS demo spreadsheet must separately
   // be set up to accept everyone too, or saves will fail with "Not authorised".
-  DISABLE_AUTH_CHECK: true
+  DISABLE_AUTH_CHECK: true,
+
+  // "Find my ward" uses a random point off an already-loaded road instead
+  // of real GPS — real location won't resolve anywhere useful for someone
+  // demoing this from outside the constituency.
+  DEMO_RANDOM_LOCATION: true
 };
 </script>
 <!-- External libraries -->
@@ -39,7 +44,7 @@ window.MAP_CONFIG = {
 <!-- Shared application code — loaded from the primary leaflet-map repo (see
      that repo's README, "Shared assets") rather than a local copy, which
      had gone stale/missing here and 404'd in production. -->
-<script src="https://daemeous.github.io/leaflet-map/core.js?shared_v=5"></script>
+<script src="https://daemeous.github.io/leaflet-map/core.js?shared_v=6"></script>
 
 <!-- Demo-only: link back to the read-only source spreadsheet.
      core.js loads as a blocking classic script, so the sidebar DOM already
